@@ -6,9 +6,9 @@ public with sharing class LeadTriggerHandlerTest {
 
     @TestSetup
     static void prepareTestData() {
-        Country__c france = new Country__c(Name = 'France', Alpha2Code__c = 'FR', Alpha3Code__c = 'FRA', Capital_city__c = 'Paris', Region__c = 'Europe');
-        Country__c japan = new Country__c(Name = 'Japan', Alpha2Code__c = 'JP', Alpha3Code__c = 'JPN', Capital_city__c = 'Tokyo', Region__c = 'Asia');
-        Country__c brazil = new Country__c(Name = 'Brazil', Alpha2Code__c = 'BR', Alpha3Code__c = 'BRA', Capital_city__c = 'Brasilia', Region__c = 'South America');
+        Country__c france = new Country__c(Name = 'France', Alpha2Code__c = 'FR', Alpha3Code__c = 'FRA', Capital_City__c = 'Paris', Region__c = 'Europe', CallingCode__c = '001');
+        Country__c japan = new Country__c(Name = 'Japan', Alpha2Code__c = 'JP', Alpha3Code__c = 'JPN', Capital_City__c = 'Tokyo', Region__c = 'Asia', CallingCode__c = '002');
+        Country__c brazil = new Country__c(Name = 'Brazil', Alpha2Code__c = 'BR', Alpha3Code__c = 'BRA', Capital_City__c = 'Brasilia', Region__c = 'South America', CallingCode__c = '003');
         insert new List<Country__c> { france, japan, brazil };
 
         Lead leadX = new Lead(LastName = 'Dupont', Company = 'Company X', Country = 'France');

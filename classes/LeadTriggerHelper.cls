@@ -47,7 +47,7 @@ public with sharing class LeadTriggerHelper {
             if (leadRecord.Country != null && matchingCountry != null) {
                 leadRecord.CountryAlpha2Code__c = matchingCountry.Alpha2Code__c;
                 leadRecord.CountryAlpha3Code__c = matchingCountry.Alpha3Code__c;
-                leadRecord.CapitalCity__c = matchingCountry.Capital_city__c;
+                leadRecord.CapitalCity__c = matchingCountry.Capital_City__c;
                 leadRecord.Region__c = matchingCountry.Region__c;
             }
         }
